@@ -1,0 +1,22 @@
+﻿<Window x:Class="SchoolShopP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolShopP"
+        mc:Ignorable="d"
+        Title="{Binding ElementName=MainFrame,Path=Content.Title}" Height="650" Width="1000"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#e7fabf">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="345*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="171*"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.ColumnSpan="2"></Frame>
+        <Image Grid.Row="0" Grid.Column="0" Source="/Resources/school_logo.png" Height="50" Width="50" HorizontalAlignment="Left"></Image>
+    </Grid>
+</Window>
